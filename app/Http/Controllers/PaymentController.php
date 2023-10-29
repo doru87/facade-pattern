@@ -33,14 +33,14 @@ class PaymentController extends Controller
     //     }
     // }
 
-    public function processPayment(Request $request)
-    {
-        $amount = $request->input('amount');
-        $token = $request->input('stripeToken');
+    // public function processPayment(Request $request)
+    // {
+    //     $amount = $request->input('amount');
+    //     $token = $request->input('stripeToken');
 
-        // Dispatch the job
-        ProcessPayment::dispatch($amount, $token);
+    //     // Dispatch the job
+    //     ProcessPayment::dispatch($amount, $token);
 
-        return redirect()->back()->with('message', 'Payment is being processed.');
-    }
+    //     return redirect()->back()->with('message', 'Payment is being processed.');
+    // }
 }
