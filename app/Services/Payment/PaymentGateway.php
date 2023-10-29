@@ -7,9 +7,9 @@ class PaymentGateway {
 
     private $apiKey;
 
-//    public function __construct($apiKey) {
-//        $this->apiKey = $apiKey;
-//    }
+    public function __construct($apiKey) {
+        $this->apiKey = $apiKey;
+    }
 
     public function charge($amount, $creditCardToken) {
         $stripeService = new StripeService($this->apiKey);
