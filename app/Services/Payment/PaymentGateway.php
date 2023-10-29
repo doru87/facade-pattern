@@ -14,7 +14,7 @@ class PaymentGateway {
     public function charge($amount, $creditCardToken) {
         $stripeService = new StripeService($this->apiKey);
         $response = $stripeService->makePayment($amount, $creditCardToken);
-
+        dd($response);
         if ($response->success) {
             return true;
         } else {
