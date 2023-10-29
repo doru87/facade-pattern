@@ -20,7 +20,7 @@ class PaymentController extends Controller
     //     $token = $request->input('stripeToken'); // Assuming you get the Stripe token from the request
     //     // dd($token);
     //     $paymentGateway = new PaymentGateway(config('services.stripe.secret'));
-        
+
     //     try {
     //         $paymentSuccess = $paymentGateway->charge($amount, $token); // Here, 1000 could be dynamic based on what the user is buying
     //         if ($paymentSuccess) {
@@ -43,4 +43,8 @@ class PaymentController extends Controller
 
     //     return redirect()->back()->with('message', 'Payment is being processed.');
     // }
+
+    public function newPayment(){
+
+    }
 }
