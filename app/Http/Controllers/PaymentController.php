@@ -46,5 +46,6 @@ class PaymentController extends Controller
 
     public function newPayment(){
         console.log('It is working nice');
+        console.log('No it is not working');
     }
 }
