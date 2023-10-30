@@ -44,7 +44,4 @@ class PaymentController extends Controller
     //     return redirect()->back()->with('message', 'Payment is being processed.');
     // }
 
-    public function newPayment(){
-        console.log('It is all ok.Yes!!!');
-    }
 }
